@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Interactive Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="calculator" role="application" aria-label="Interactive calculator">
+    <section class="display-area">
+      <div id="history-display" class="history-display" aria-hidden="true"></div>
+      <div id="display" class="display" role="status" aria-live="polite">0</div>
+    </section>
+
+    <section class="controls">
+      <div class="row">
+        <button class="btn func" id="mc">MC</button>
+        <button class="btn func" id="mr">MR</button>
+        <button class="btn func" id="mplus">M+</button>
+        <button class="btn func" id="mminus">M-</button>
+        <button class="btn func" id="clear-entry">CE</button>
+        <button class="btn func" id="clear">C</button>
+      </div>
+
+      <div class="row">
+        <button class="btn" data-key="7">7</button>
+        <button class="btn" data-key="8">8</button>
+        <button class="btn" data-key="9">9</button>
+        <button class="btn op" data-op="/">÷</button>
+      </div>
+
+      <div class="row">
+        <button class="btn" data-key="4">4</button>
+        <button class="btn" data-key="5">5</button>
+        <button class="btn" data-key="6">6</button>
+        <button class="btn op" data-op="*">×</button>
+      </div>
+
+      <div class="row">
+        <button class="btn" data-key="1">1</button>
+        <button class="btn" data-key="2">2</button>
+        <button class="btn" data-key="3">3</button>
+        <button class="btn op" data-op="-">−</button>
+      </div>
+
+      <div class="row">
+        <button class="btn zero" data-key="0">0</button>
+        <button class="btn" id="decimal" data-key=".">.</button>
+        <button class="btn equals" id="equals">=</button>
+        <button class="btn op" data-op="+">+</button>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="memory-indicator" id="memory-indicator">M: 0</div>
+      <div class="note">Keyboard supported: numbers, + - * / . Backspace = Enter</div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
