@@ -56,13 +56,3 @@ Menyesuaikan tampilan untuk smartphone, tablet, dan desktop.
     │── script.js
     └── README.md
 
-## 🛠 Cara Upload ke GitHub
-
-``` bash
-git init
-git add .
-git commit -m "Initial commit — Kalkulator Interaktif"
-git branch -M main
-git remote add origin https://github.com/USERNAME/NAMA-REPO.git
-git push -u origin main
-```
